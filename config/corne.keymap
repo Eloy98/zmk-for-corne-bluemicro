@@ -73,6 +73,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <180>;
             global-quick-tap;
+            flavor = "tap-preferred";
         };
         ltq: ltq {
             compatible = "zmk,behavior-hold-tap";
@@ -104,7 +105,7 @@
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &trans
 &trans     &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)    &kp LC(F12)       &kp MINUS     &kp EQUAL     &kp GRAVE     &kp RC(L)        &kp SQT  &trans
-&trans     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(X)  &kp LC(LA(A))          &trans        &trans        &trans        &trans  &kp RC(SLASH)  &trans
+&trans     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(LA(A))          &trans        &trans        &trans        &trans  &kp RC(SLASH)  &trans
                                           &trans        &trans         &trans          &trans    &kp RSHIFT        &trans
             >;
         };

@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo1 {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -36,6 +45,15 @@
         &trans  &kp HOME  &kp LEFT    &kp UP  &kp DOWN  &kp RIGHT    &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH    &trans
 &kp LEFT_SHIFT    &trans    &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE   &kp SQT
                                     &kp LGUI    &trans  &kp ENTER    &kp SPACE     &trans  &kp RALT
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };

@@ -54,12 +54,12 @@
     };
 
     behaviors {
-        tab_esc_ctrl: tab_esc_ctrl {
+        tab_esc_shift: tab_esc_shift {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAB_ESC_CTRL";
+            label = "TAB_ESC_SHIFT";
             #binding-cells = <0>;
             bindings =
-                <&mt LCTRL ESC>,
+                <&mt LSHIFT ESC>,
                 <&kp TAB>;
         };
         gqt: global-quick-tap {

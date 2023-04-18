@@ -54,12 +54,12 @@
     };
 
     behaviors {
-        tab_esc_shift: tab_esc_shift {
+        tab_esc_ctrl: tab_esc_ctrl {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAB_ESC_SHIFT";
+            label = "TAB_ESC_CTRL";
             #binding-cells = <0>;
             bindings =
-                <&mt LSHIFT ESC>,
+                <&mt LCTRL ESC>,
                 <&kp TAB>;
         };
         gqt: global-quick-tap {
@@ -94,10 +94,10 @@
 
         default_layer {
             bindings = <
-&trans  &kp Q  &kp W           &kp E        &kp R        &kp T                    &kp Y        &kp U      &kp I    &kp O     &kp P  &trans
-&trans  &kp A  &kp S           &kp D        &kp F        &kp G                    &kp H  &gqt RALT J      &kp K    &kp L  &kp SEMI  &trans
-&trans  &kp Z  &kp X           &kp C        &kp V        &kp B                    &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &tab_esc_shift  &lt 1 SPACE  &lt 2 ENTER    &mt RIGHT_SHIFT ENTER  &ltq 2 BSPC      &mo 3
+&trans  &kp Q  &kp W          &kp E        &kp R        &kp T                    &kp Y        &kp U      &kp I    &kp O     &kp P  &trans
+&trans  &kp A  &kp S          &kp D        &kp F        &kp G                    &kp H  &gqt RALT J      &kp K    &kp L  &kp SEMI  &trans
+&trans  &kp Z  &kp X          &kp C        &kp V        &kp B                    &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans
+                      &tab_esc_ctrl  &lt 1 SPACE  &lt 2 ENTER    &mt RIGHT_SHIFT ENTER  &ltq 2 BSPC      &mo 3
             >;
         };
 

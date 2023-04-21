@@ -94,28 +94,28 @@
 
         default_layer {
             bindings = <
-&trans  &kp Q  &kp W          &kp E        &kp R        &kp T                    &kp Y        &kp U      &kp I    &kp O     &kp P  &trans
-&trans  &kp A  &kp S          &kp D        &kp F        &kp G                    &kp H  &gqt RALT J      &kp K    &kp L  &kp SEMI  &trans
-&trans  &kp Z  &kp X          &kp C        &kp V        &kp B                    &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &tab_esc_ctrl  &lt 1 SPACE  &lt 2 ENTER    &mt RIGHT_SHIFT ENTER  &ltq 2 BSPC      &mo 3
+&trans  &kp Q  &kp W          &kp E        &kp R        &kp T           &kp Y        &kp U       &kp I    &kp O     &kp P  &trans
+&trans  &kp A  &kp S          &kp D        &kp F        &kp G           &kp H        &kp J       &kp K    &kp L  &kp SEMI  &trans
+&trans  &kp Z  &kp X          &kp C        &kp V        &kp B           &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
+                      &tab_esc_ctrl  &lt 1 SPACE  &lt 2 ENTER    &kp LEFT_WIN  &ltq 2 BSPC  &kp RSHIFT
             >;
         };
 
         lower_layer {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &trans
-&trans     &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)    &kp LC(F12)       &kp MINUS     &kp EQUAL     &kp GRAVE     &kp RC(L)        &kp SQT  &trans
-&trans     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(LA(A))          &trans        &trans        &trans        &trans  &kp RC(SLASH)  &trans
-                                          &trans        &trans         &trans          &trans    &kp RSHIFT        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &trans
+&trans     &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)    &kp LC(F12)       &kp MINUS      &kp EQUAL     &kp GRAVE     &kp RC(L)        &kp SQT  &trans
+&trans     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(LA(A))         &kp F12  &kp RIGHT_ALT       &kp TAB        &trans  &kp RC(SLASH)  &trans
+                                          &trans        &trans         &trans           &mo 3     &kp RSHIFT        &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &trans    &trans    &kp UP     &trans  &trans  &trans
-&trans  &kp CAPS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6       &kp KP_DOT    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans   &kp DEL  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3      &kp AT_SIGN    &trans    &trans    &trans     &trans  &trans  &trans
-                                            &trans           &trans           &trans    &trans    &trans    &trans
+&trans  &kp K_CALCULATOR  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &trans    &trans    &kp UP     &trans  &trans  &trans
+&trans          &kp CAPS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6       &kp KP_DOT    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans           &kp DEL  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3      &kp AT_SIGN    &trans    &trans    &trans     &trans  &trans  &trans
+                                                    &trans           &trans           &trans    &trans    &trans    &trans
             >;
         };
 

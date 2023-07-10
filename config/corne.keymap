@@ -52,12 +52,12 @@
             key-positions = <17 18>;
         };
 
-        combo8 {
+        combo9 {
             bindings = <&to 4>;
             key-positions = <1 10>;
         };
 
-        combo9 {
+        combo10 {
             bindings = <&to 0>;
             key-positions = <2 9>;
         };
